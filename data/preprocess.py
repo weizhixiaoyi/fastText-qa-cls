@@ -8,6 +8,7 @@ stop_words_file_path = 'stopwords.txt'
 stop_words = open(stop_words_file_path, 'r').readlines()
 stop_words = [word.strip() for word in stop_words]
 
+
 def process(data):
     new_data = []
     label = ''
@@ -50,9 +51,7 @@ def save_data(file_data, file_path):
             for vv in v:
                 # word
                 s = list(vv)
-                s = [ts for ts in s if ts not in stop_words]
-                # print(s)
-                ss = ' '.join(s)
+                ss = ' '.join([ts for ts in s if ts not in stop_words])
 
                 # words
                 # t = jieba.lcut(vv)

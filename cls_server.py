@@ -31,8 +31,7 @@ class HttpHandler(BaseHTTPRequestHandler):
                 url_question = params['question'][0]
                 # get query tuple
                 url_question = list(url_question)
-                q = [ts for ts in url_question if ts not in stop_words]
-                qa_cls_question = ' '.join(q)
+                qa_cls_question = ' '.join([ts for ts in url_question if ts not in stop_words])
                 qa_cls = qa_cls_model.predct(qa_cls_question)
                 print(qa_cls)
                 qa_cls = qa_cls[0][0]
