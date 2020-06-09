@@ -1,25 +1,25 @@
-__label__knowqa	海 贼 王 里 乔 巴 的 克 星 有 谁 ？
-__label__knowqa	著 有 《 三 吏 》 的 诗 人 是 哪 一 年 逝 世 的 ？
+__label__knowqa	海 贼 王 里 乔 巴 的 克 星 有 谁
+__label__knowqa	著 有 《 三 吏 》 的 诗 人 是 哪 一 年 逝 世 的
 __label__knowqa	中 源 协 和 的 常 务 副 总 经 理
-__label__knowqa	地 震 在 地 球 上 每 年 多 少 次 ？
-__label__knowqa	在 金 庸 小 说 《 天 龙 八 部 》 中 ， 斗 转 星 移 的 修 习 者 是 谁 ？
-__label__knowqa	中 华 人 民 共 和 国 的 国 家 领 导 人 是 谁 ？
-__label__knowqa	北 京 大 学 现 任 校 长 有 哪 些 主 要 成 就 ？
-__label__knowqa	电 影 《 鬼 子 来 了 》 的 导 演 的 代 表 作 品 中 荣 获 亚 洲 电 影 大 奖 和 最 高 票 房 亚 洲 电 影 大 奖 的 影 片 的 外 文 名 称 是 ？
-__label__knowqa	经 典 女 香 " 水 之 恋 " 的 品 牌 下 还 有 哪 些 香 水 ？
+__label__knowqa	地 震 在 地 球 上 每 年 多 少 次
+__label__knowqa	在 金 庸 小 说 《 天 龙 八 部 》 中 斗 转 星 移 的 修 习 者 是 谁
+__label__knowqa	中 华 人 民 共 和 国 的 国 家 领 导 人 是 谁
+__label__knowqa	北 京 大 学 现 任 校 长 有 哪 些 主 要 成 就
+__label__knowqa	电 影 《 鬼 子 来 了 》 的 导 演 的 代 表 作 品 中 荣 获 亚 洲 电 影 大 奖 和 最 高 票 房 亚 洲 电 影 大 奖 的 影 片 的 外 文 名 称 是
+__label__knowqa	经 典 女 香 " 水 之 恋 " 的 品 牌 下 还 有 哪 些 香 水
 __label__knowqa	复 旦 大 学 出 了 哪 些 生 物 学 家
 __label__taskqa	海 棉 宝 宝
 __label__taskqa	打 开 搜 狐 新 闻
 __label__taskqa	导 航 到 佛 山 大 良 汽 车 站
 __label__taskqa	茶 用 英 语 怎 么 说 呀
-__label__taskqa	噗 我 想 听 新 闻 。
-__label__taskqa	搜 索 最 近 的 ， 科 幻 电 影 。
-__label__taskqa	今 天 惠 州 新 闻 。
-__label__taskqa	干 贝 怎 么 做 ？
-__label__taskqa	不 辣 ， 猜 谜 语 。
-__label__taskqa	怎 么 煮 面 才 好 吃 呢 ？
+__label__taskqa	噗 我 想 听 新 闻
+__label__taskqa	搜 索 最 近 的 科 幻 电 影
+__label__taskqa	今 天 惠 州 新 闻
+__label__taskqa	干 贝 怎 么 做
+__label__taskqa	不 辣 ， 猜 谜 语
+__label__taskqa	怎 么 煮 面 才 好 吃 呢
 __label__chitchat	短 鲁 班 的 闺 蜜 在 农 林 读 书 哦
-__label__chitchat	再 接 再 厉 ！
+__label__chitchat	再 接 再 厉
 __label__chitchat	男 神 约 拍 吗 给 你 找 个 专 业 的 来 拍 你 嘻 嘻
 __label__chitchat	这 么 快 就 被 发 现 了
 __label__chitchat	到 午 餐 时 间 了 啊

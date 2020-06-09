@@ -12,7 +12,9 @@ PORT_NUMBER = 9210
 
 root_path = os.path.dirname(__file__)
 qa_cls_model = fasttext.load_model(os.path.join(root_path, 'model/qa_cls_model.bin'))
-
+stop_words_file_path = 'data/stopwords.txt'
+stop_words = open(stop_words_file_path, 'r').readlines()
+stop_words = [word.strip() for word in stop_words]
 
 class HttpHandler(BaseHTTPRequestHandler):
     """ Handler http request"""
@@ -28,8 +30,10 @@ class HttpHandler(BaseHTTPRequestHandler):
                 params = parse.parse_qs(query_string)
                 url_question = params['question'][0]
                 # get query tuple
-                qa_cls_question = ' '.join(list(url_question))
-                qa_cls = qa_cls_model.predict(qa_cls_question)
+                url_question = list(url_question)
+                q = [ts for ts in url_question if ts not in stop_words]
+                qa_cls_question = ' '.join(q)
+                qa_cls = qa_cls_model.predct(qa_cls_question)
                 print(qa_cls)
                 qa_cls = qa_cls[0][0]
 

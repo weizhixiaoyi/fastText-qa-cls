@@ -1,10 +1,12 @@
 # -*- coding:utf-8 -*-
 import jieba
+from sklearn.model_selection import train_test_split
 
 file_path_1 = 'nlu1.txt'
 file_path_2 = 'nlu2.txt'
-from sklearn.model_selection import train_test_split
-
+stop_words_file_path = 'stopwords.txt'
+stop_words = open(stop_words_file_path, 'r').readlines()
+stop_words = [word.strip() for word in stop_words]
 
 def process(data):
     new_data = []
@@ -47,13 +49,15 @@ def save_data(file_data, file_path):
         for k, v in temp_dict.items():
             for vv in v:
                 # word
-                t = list(vv)
-                tt = ' '.join(t)
+                s = list(vv)
+                s = [ts for ts in s if ts not in stop_words]
+                # print(s)
+                ss = ' '.join(s)
 
                 # words
                 # t = jieba.lcut(vv)
                 # tt = ' '.join(t)
-                f.write(k + '\t' + tt + '\n')
+                f.write(k + '\t' + ss + '\n')
 
 
 save_data(train_file_data, 'qa_cls_train_data.txt')

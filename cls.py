@@ -5,7 +5,9 @@ import fasttext
 qa_cls_train_data_path = 'data/qa_cls_train_data.txt'
 qa_cls_test_data_path = 'data/qa_cls_test_data.txt'
 qa_cls_model_path = 'model/qa_cls_model.bin'
-
+stop_words_file_path = 'data/stopwords.txt'
+stop_words = open(stop_words_file_path, 'r').readlines()
+stop_words = [word.strip() for word in stop_words]
 
 def train_model():
     model = fasttext.train_supervised(
@@ -23,11 +25,16 @@ def train_model():
 def cls_predict():
     model = fasttext.load_model(qa_cls_model_path)
     text = '刘翔出生地在哪儿'
-    text = ' '.join(list(text))
+    s = list(text)
+    s = [ts for ts in s if ts not in stop_words]
+    text = ' '.join(s)
     print(model.predict(text))
     # for line in open(qa_cls_test_data_path).readlines():
     #     line = line.strip('\n').split('\t')[1]
-    #     print(line, model.predict(line))
+    #     s = list(line)
+    #     s = [ts for ts in s if ts not in stop_words]
+    #     text = ' '.join(s)
+    #     print(line, model.predict(text))
 
 
 if __name__ == '__main__':
