@@ -7,13 +7,15 @@ qa_cls_test_data_path = 'data/qa_cls_test_data.txt'
 qa_cls_model_path = 'model/qa_cls_model.bin'
 
 
-# qa_cls_train_data_path = 'data/template/cooking.train'
-# qa_cls_test_data_path = 'data/template/cooking.valid'
-# qa_cls_model_path = 'model/cooking_model.bin'
-
-
 def train_model():
-    model = fasttext.train_supervised(qa_cls_train_data_path, epoch=25, lr=1, wordNgrams=3, dim=100, loss='hs')
+    model = fasttext.train_supervised(
+        qa_cls_train_data_path,
+        epoch=25,
+        lr=1,
+        wordNgrams=3,
+        dim=100,
+        loss='hs'
+    )
     model.save_model(qa_cls_model_path)
     print(model.test(qa_cls_test_data_path))
 
