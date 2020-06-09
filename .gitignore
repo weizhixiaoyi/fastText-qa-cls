@@ -1,0 +1,8 @@
+.idea/
+data/nlu1.txt
+data/nlu2.txt
+data/preprocess.py
+data/qa_cls_train_data.txt
+data/qa_cls_test_data.txt
+model/
+fastText/

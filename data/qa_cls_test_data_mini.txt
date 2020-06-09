@@ -1,0 +1,15 @@
+__label__chitchat	真 特 么 实 诚 ， 把 她 们 都 绿 了
+__label__chitchat	怎 么 样 才 开 心
+__label__chitchat	她 家 的
+__label__chitchat	一 道 菜 都 够 我 吃 顿 麦 当 劳 了
+__label__chitchat	可 以 可 以
+__label__knowqa	制 作 K i n d l e 的 公 司 的 官 网 是 ？
+__label__knowqa	我 想 了 解 一 下 牛 奶 的 主 要 营 养 成 分 ？
+__label__knowqa	三 星 集 团 的 手 机 中 散 热 一 般 的 手 机 型 号 有 ？
+__label__knowqa	民 国 黎 元 洪 创 立 了 什 么 党 派 ？
+__label__knowqa	债 券 回 购 有 哪 些 类 型 ？
+__label__taskqa	随 便 来 首 刘 德 华 的 歌 。
+__label__taskqa	帮 我 开 捕 鱼 达 人
+__label__taskqa	胖 鱼 头 怎 么 烧 ？
+__label__taskqa	导 航 去 科 大 讯 飞
+__label__taskqa	从 新 加 坡 花 园 怎 么 去 宁 溪 路
